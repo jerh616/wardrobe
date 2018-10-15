@@ -19,6 +19,7 @@
     "mongodb": "^2.2.16"
   },
   "devDependencies": {
-    "nodemon": "^1.18.4"
+    "nodemon": "^1.18.4",
+    "jshint": "^2.9.6"
   }
 }
