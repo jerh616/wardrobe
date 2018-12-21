@@ -14,8 +14,9 @@ MongoClient.connect(db.url, (err, client) => {
     if (err) {
         return console.log(err);
     } else {
-        let database = client.db("wardrobe");
-        require('./app/routes')(app, database);
+        let database = client.db('wardrobe');
+        require('./app/routes')(app, database); // Automatically loads the index.js in the specified directory. 
+                                                // Which is a module that returns a function using module.exports
 
         app.listen(port, () => {
             console.log('Server alive on port ' + port);
