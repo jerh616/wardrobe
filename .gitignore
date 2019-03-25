@@ -1,0 +1,8 @@
+.gitignore
+node_modules/
+config/db.js
+**/logs
+*.log
+.vscode
+.eslintrc
+package-lock.json
